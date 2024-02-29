@@ -1,0 +1,108 @@
+{% include "header.html" %}
+<header
+  class="masthead"
+  style="background-image: url('../static/assets/img/home-bg.jpg')"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="site-heading">
+          <h1>About</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Main Content-->
+<main class="mb-4">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+
+        <div class="points">
+            <button class="accordion active" style="background-color: #ff99c8;">
+                Who Are We
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p class="desc">
+                    Welcome to CharityChic – Where Compassion Meets Community!<br>
+                    Our platform is dedicated to creating a bridge between generosity and those in need.
+                </p>
+            </div>
+        </div>
+
+        <div class="points">
+            <button class="accordion active" style="background-color: #fcf6bd;">
+                Our Mission
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>At the heart of CharityChic there is a mission to combat waste and promote a culture of giving.<br>
+                    We strive to connect businesses and individuals with items to spare to those in need.<br>
+                    By leveraging technology, we created this amazing giving platform where you can take a part!<br>
+                    Join us today, and help us to make the present a present!</p>
+            </div>
+        </div>
+
+        <div class="points">
+            <button class="accordion active" style="background-color: #d0f4de;">
+                What Sets Us Apart
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    Food for All:
+                    Businesses and individuals often find themselves with food that might go to waste.<br>
+                    We provide a channel between them and those who need it the most.
+                </p>
+                <p>
+                    Clothing with Heart:
+                    Your closet could be someone else's treasure.<br>
+                    We provide a channel between them and those who need it the most.
+                </p>
+            </div>
+        </div>
+
+        <div class="points">
+            <button class="accordion active" style="background-color: #a9def9;">
+                How it Works
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                   Donate with Ease:
+                   Sign up and list items quickly.
+                </p>
+                <p>
+                   Find What You Need:
+                   You can look by area and category and find the suitable items for you.
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
+</main>
+
+<script>
+    var acc = document.getElementsByClassName
+    ("accordion");
+    var i;
+
+    for(i = 0; i < acc.length; i++){
+        acc[i].addEventListener("click", function
+        (){
+            this.classList.toggle("active");
+            this.parentElement.classList.toggle("active");
+
+            var pannel = this.nextElementSibling;
+
+            if(pannel.style.display == "block"){
+                pannel.style.display = "none";
+            }else{
+                pannel.style.display = "block";
+            }
+        });
+    }
+</script>
+

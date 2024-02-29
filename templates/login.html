@@ -1,0 +1,19 @@
+{% include "header.html" %}
+{% from "bootstrap5/form.html" import render_form %}
+
+<header
+  class="masthead"
+  style="background-image: url('../static/assets/img/home-bg.jpg')"
+>
+</header>
+<body>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+          <p class="flash">{{ message }}</p>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    {{ render_form(form, novalidate=True, button_map={"submit": "outline-info"}) }}
+</body>
+</html>
