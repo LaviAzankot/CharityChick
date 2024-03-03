@@ -2,7 +2,6 @@
     "name": "CharityChick",
     "version": "1.0.0",
     "description": "",
-    "main": "main.py",
     "scripts": {
         "start": "node main.py",
         "type": "module",
