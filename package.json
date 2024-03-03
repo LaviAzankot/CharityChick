@@ -4,7 +4,8 @@
     "description": "",
     "main": "main.py",
     "scripts": {
-        "start": "node requirements.txt",
+        "start": "node main.py",
+        "type": "module",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -28,7 +29,10 @@
         "WTForms":"^3.0.1",
         "SQLAlchemy":"^2.0.19",
         "gunicorn":"^21.2.0",
-        "psycopg2-binary":"^2.9.9"
+        "psycopg2-binary":"^2.9.9",
+        "random": "^9.6.",
+        "string": "^3.12.2" ,
+        "smtplib": "^3.12.2"
     },
     "homepage": "https://github.com/LaviAzankot/CharityChick/main.py"
 }
