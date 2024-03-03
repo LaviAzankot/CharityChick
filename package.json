@@ -32,7 +32,8 @@
         "psycopg2-binary":"^2.9.9",
         "random": "^9.6.",
         "string": "^3.12.2" ,
-        "smtplib": "^3.12.2"
+        "smtplib": "^3.12.2",
+        "os": "^3.12.2"
     },
     "homepage": "https://github.com/LaviAzankot/CharityChick/main.py"
 }
