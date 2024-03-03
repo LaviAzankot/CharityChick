@@ -2,10 +2,9 @@
     "name": "CharityChick",
     "version": "1.0.0",
     "description": "",
+    "main": "main.py",
     "scripts": {
-        "build": "echo \"main.py\" && exit 1",
-        "test": "echo \"main.py\" && exit 1",
-       "start": "node main.py"
+        "start": "node main.py"
     },
     "repository": {
         "type": "git",
