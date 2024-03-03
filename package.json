@@ -1,0 +1,19 @@
+{
+    "name": "CharityChick",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "echo \"main.py\" && exit 1",
+        "test": "echo \"main.py\" && exit 1",
+       "start": "node main.py"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LaviAzankot/CharityChick.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/LaviAzankot/CharityChick/issues"
+    },
+    "homepage": "https://github.com/LaviAzankot/CharityChick#readme"}
