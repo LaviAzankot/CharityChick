@@ -4,8 +4,8 @@
     "description": "",
     "main": "main.py",
     "scripts": {
-        "start": "node main.py"
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node main.py",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
