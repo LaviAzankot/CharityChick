@@ -4,7 +4,7 @@
     "description": "",
     "main": "main.py",
     "scripts": {
-        "start": "node main.py",
+        "start": "node requirements.txt",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
