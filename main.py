@@ -255,6 +255,10 @@ def show_post(post_id):
     print(comments)
     form = CommentForm()
     if form.validate_on_submit():
+        if not current_user.is_authenticated:
+            flash("You need to login or register to comment.")
+            return redirect(url_for("login"))
+            
         comment = Comment(text=form.text.data,
                           date=datetime.now().strftime("%B %d, %Y"),
                           author_name=current_user.name,
