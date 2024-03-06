@@ -295,4 +295,4 @@ Message:{request.form.get('message')}"""
     return render_template('contact.html', msg_sent=False)
 
 
-app.run(debug=True, port=5002)
+app.run(debug=True, port=10000)
