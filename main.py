@@ -19,7 +19,7 @@ PASSWORD = os.environ.get('PASSWORD')
 
 # Configure Flask
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get('FLASK_KEY')
+app.config['SECRET_KEY'] = os.environ.get('FLASK_KEY', 'sqlite:///posts.db')
 ckeditor = CKEditor(app)
 Bootstrap5(app)
 
